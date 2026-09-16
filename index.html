@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="lockScreen">
+  <div class="lock-card">
+    <div class="heart">❤️</div>
+    <h1>Just for you</h1>
+    <p>This little page is meant for one special person.</p>
+    <input id="password" type="password" placeholder="Enter our password">
+    <button onclick="unlock()">Open ❤️</button>
+    <p id="error"></p>
+  </div>
+</div>
+
+<main id="site" class="hidden">
+  <section class="hero">
+    <p class="small">A little something from me</p>
+    <h1>I'm Sorry, My Favorite Person ❤️</h1>
+    <p>I made this little corner just to say what I sometimes struggle to put into words.</p>
+  </section>
+
+  <section>
+    <h2>Our memories 📸</h2>
+    <p class="hint">Put your photos inside the <b>images</b> folder, then add their names below.</p>
+    <div class="gallery">
+      <img src="images/photo1.jpg" alt="Our memory">
+      <img src="images/photo2.jpg" alt="Our memory">
+      <img src="images/photo3.jpg" alt="Our memory">
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>I'm genuinely sorry</h2>
+    <p>I know saying sorry doesn't magically undo the things I did or the way they made you feel. I don't want to use an apology as an easy way out. I know my actions matter more than just saying the right words.</p>
+    <p>You deserve to be heard, understood and appreciated. I don't want you to feel like you're the only one trying or carrying the relationship. I want to do better, not just promise that I will.</p>
+  </section>
+
+  <section class="reasons">
+    <div><h3>♡ You matter</h3><p>You mean so much to me, and I never want my mistakes to make you forget that.</p></div>
+    <div><h3>♡ I hear you</h3><p>Your feelings and expectations are valid. You shouldn't have to make yourself smaller because I messed up.</p></div>
+    <div><h3>♡ I appreciate you</h3><p>I notice the little things you do, even when I don't always show it properly.</p></div>
+    <div><h3>♡ I want to improve</h3><p>I want my actions to prove that I'm learning from my mistakes.</p></div>
+  </section>
+
+  <section class="letter">
+    <h2>A little letter for you 💌</h2>
+    <p>Hey you,</p>
+    <p>I know I haven't always been the person you deserved me to be, and I'm really sorry for the moments where my actions hurt you. I don't expect one long message to fix everything. I just want you to know that I understand why you're hurt.</p>
+    <p>You are genuinely important to me. I love the little things about you, the way you make ordinary conversations feel special, and all the memories we've made together. Having you in my life means more to me than I probably say enough.</p>
+    <p>I don't want you to lower your expectations of me just because I've messed up. You're allowed to expect effort, care, consistency and the little things. Instead of asking you to expect less, I want to become someone who can actually meet those expectations.</p>
+    <p>So this isn't me asking you to instantly forgive me or pretend everything is normal. Take whatever time you need. I just hope that, with time, my actions can show you how much you matter to me.</p>
+    <p>Thank you for being you. ❤️</p>
+    <p class="signature">— from someone who really, really cares about you</p>
+  </section>
+
+  <button class="final" onclick="showMessage()">One more thing...</button>
+  <p id="finalMessage" class="final-message hidden">No matter how many words I put here, you deserve to feel valued through actions too. ❤️</p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
