@@ -1,69 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>For You ❤️</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090d25" />
+  <title>My Love ♡</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
-<div id="lockScreen">
-  <div class="lock-card">
-    <div class="heart">❤️</div>
-    <h1>Just for you</h1>
-    <p>This little page is meant for one special person.</p>
-    <input id="password" type="password" placeholder="Enter our password">
-    <button onclick="unlock()">Open ❤️</button>
-    <p id="error"></p>
-  </div>
-</div>
-
-<main id="site" class="hidden">
-  <section class="hero">
-    <p class="small">A little something from me</p>
-    <h1>I'm Sorry, My Favorite Person ❤️</h1>
-    <p>I made this little corner just to say what I sometimes struggle to put into words.</p>
-  </section>
-
-  <section>
-    <h2>Our memories 📸</h2>
-    <p class="hint">Put your photos inside the <b>images</b> folder, then add their names below.</p>
-    <div class="gallery">
-      <img src="images/photo1.jpg" alt="Our memory">
-      <img src="images/photo2.jpg" alt="Our memory">
-      <img src="images/photo3.jpg" alt="Our memory">
+  <!-- Password screen -->
+  <div id="lockScreen" class="lock-screen">
+    <div class="lock-glow"></div>
+    <div class="lock-card">
+      <div class="lock-flower">🌸</div>
+      <div class="tiny-hearts">♡ ✦ ♡</div>
+      <h1>Just for you ♡</h1>
+      <p>This little corner of my heart is locked.</p>
+      <div class="password-wrap">
+        <input id="passwordInput" type="password" placeholder="Enter the secret password" autocomplete="off">
+        <button id="unlockBtn">Unlock ♡</button>
+      </div>
+      <p id="errorMsg" class="error-msg">Hmm… that's not it ♡</p>
+      <span class="lock-hint">a tiny secret between us ✨</span>
     </div>
-  </section>
+  </div>
 
-  <section class="card">
-    <h2>I'm genuinely sorry</h2>
-    <p>I know saying sorry doesn't magically undo the things I did or the way they made you feel. I don't want to use an apology as an easy way out. I know my actions matter more than just saying the right words.</p>
-    <p>You deserve to be heard, understood and appreciated. I don't want you to feel like you're the only one trying or carrying the relationship. I want to do better, not just promise that I will.</p>
-  </section>
+  <main id="site" class="site hidden">
+    <div class="top-ribbon" aria-hidden="true"><span>♡</span></div>
 
-  <section class="reasons">
-    <div><h3>♡ You matter</h3><p>You mean so much to me, and I never want my mistakes to make you forget that.</p></div>
-    <div><h3>♡ I hear you</h3><p>Your feelings and expectations are valid. You shouldn't have to make yourself smaller because I messed up.</p></div>
-    <div><h3>♡ I appreciate you</h3><p>I notice the little things you do, even when I don't always show it properly.</p></div>
-    <div><h3>♡ I want to improve</h3><p>I want my actions to prove that I'm learning from my mistakes.</p></div>
-  </section>
+    <section class="hero section">
+      <div class="flower flower-a">🌸</div>
+      <div class="flower flower-b">🌺</div>
+      <div class="spark s1">✦</div><div class="spark s2">✧</div>
+      <div class="heart h1">♥</div><div class="heart h2">♥</div>
 
-  <section class="letter">
-    <h2>A little letter for you 💌</h2>
-    <p>Hey you,</p>
-    <p>I know I haven't always been the person you deserved me to be, and I'm really sorry for the moments where my actions hurt you. I don't expect one long message to fix everything. I just want you to know that I understand why you're hurt.</p>
-    <p>You are genuinely important to me. I love the little things about you, the way you make ordinary conversations feel special, and all the memories we've made together. Having you in my life means more to me than I probably say enough.</p>
-    <p>I don't want you to lower your expectations of me just because I've messed up. You're allowed to expect effort, care, consistency and the little things. Instead of asking you to expect less, I want to become someone who can actually meet those expectations.</p>
-    <p>So this isn't me asking you to instantly forgive me or pretend everything is normal. Take whatever time you need. I just hope that, with time, my actions can show you how much you matter to me.</p>
-    <p>Thank you for being you. ❤️</p>
-    <p class="signature">— from someone who really, really cares about you</p>
-  </section>
+      <div class="hero-inner">
+        <p class="eyebrow">a little apology made with love</p>
+        <h1><span>My</span> Love <b>♡</b></h1>
+        <p class="subtitle">For the girl who means more to me than I know how to say.</p>
+        <div class="divider"><i></i><span>♡</span><i></i></div>
+      </div>
+    </section>
 
-  <button class="final" onclick="showMessage()">One more thing...</button>
-  <p id="finalMessage" class="final-message hidden">No matter how many words I put here, you deserve to feel valued through actions too. ❤️</p>
-</main>
+    <section class="letter section">
+      <div class="section-flower left">🌷</div>
+      <div class="paper">
+        <p class="mini-title">a letter from my heart</p>
+        <h2>I'm sorry, my love. ♡</h2>
+        <div class="letter-text">
+          <p>I know I haven't always shown you how much I care, and I'm genuinely sorry for that.</p>
+          <p>I should have made more effort to talk to you, especially when you were waiting for me. I never wanted you to feel ignored or unimportant.</p>
+          <p>You matter to me so much. I don't want a silly mistake to make you feel like I don't value you.</p>
+          <p class="highlight">I'll be more thoughtful, more present, and I'll do better. ♡</p>
+          <p>Thank you for being patient with me. I hope you can forgive me and keep smiling, because your smile is one of my favourite things.</p>
+        </div>
+        <div class="signature">— yours, always ♡</div>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <section class="memories section">
+      <div class="corner-bloom bloom-left">🌸<span>🌼</span></div>
+      <div class="corner-bloom bloom-right">🌼<span>🌸</span></div>
+
+      <div class="section-heading">
+        <div class="camera">📷</div>
+        <h2><span>Our</span> memories</h2>
+        <p>Keep our favourite little moments here ♡</p>
+        <div class="divider"><i></i><span>♥</span><i></i></div>
+      </div>
+
+      <div class="gallery">
+        <article class="memory-card pink-card">
+          <div class="tape">♡ ♡ ♡</div>
+          <img src="photo1.jpg" alt="Our memory 1"
+               onerror="this.style.display='none'; this.parentElement.classList.add('empty-photo')">
+          <div class="placeholder"><span>♡</span><strong>Your photo here</strong><small>our little moment</small></div>
+          <div class="memory-label">Our memory ♡</div>
+          <div class="card-flower">🌸🌷</div>
+        </article>
+
+        <article class="memory-card blue-card">
+          <div class="tape blue-tape">♡ ♡ ♡</div>
+          <img src="photo2.jpg" alt="Our memory 2"
+               onerror="this.style.display='none'; this.parentElement.classList.add('empty-photo')">
+          <div class="placeholder"><span>♡</span><strong>Your photo here</strong><small>another sweet moment</small></div>
+          <div class="memory-label">Our memory ♡</div>
+          <div class="card-flower">🌺🌼</div>
+        </article>
+
+        <article class="memory-card lavender-card">
+          <div class="tape">♡ ♡ ♡</div>
+          <img src="photo3.jpg" alt="Our memory 3"
+               onerror="this.style.display='none'; this.parentElement.classList.add('empty-photo')">
+          <div class="placeholder"><span>♡</span><strong>Your photo here</strong><small>one more memory</small></div>
+          <div class="memory-label">Our memory ♡</div>
+          <div class="card-flower">🌸🌼</div>
+        </article>
+
+        <div class="better-together">
+          <div class="double-heart">♡♡</div>
+          <span>Better</span>
+          <span>Together</span>
+          <small>always & forever ♡</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="ending section">
+      <div class="ending-card">
+        <div class="petals">✿ ✧ ❀ ✧ ✿</div>
+        <h2>Can we start again? ♡</h2>
+        <p>No excuses. Just a promise to listen, care, and make things better.</p>
+        <div class="big-heart">♡</div>
+        <p class="love-note">You are special to me. More than words can explain.</p>
+      </div>
+      <div class="bottom-ribbon">♡ &nbsp; made with love &nbsp; ♡</div>
+    </section>
+  </main>
+
+  <script>
+    const correctPassword = "moonlight123";
+    const lockScreen = document.getElementById("lockScreen");
+    const site = document.getElementById("site");
+    const input = document.getElementById("passwordInput");
+    const button = document.getElementById("unlockBtn");
+    const error = document.getElementById("errorMsg");
+
+    function unlock() {
+      if (input.value === correctPassword) {
+        lockScreen.classList.add("unlocking");
+        setTimeout(() => {
+          lockScreen.style.display = "none";
+          site.classList.remove("hidden");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }, 450);
+      } else {
+        error.classList.add("show");
+        input.classList.add("shake");
+        setTimeout(() => input.classList.remove("shake"), 450);
+      }
+    }
+
+    button.addEventListener("click", unlock);
+    input.addEventListener("keydown", e => {
+      if (e.key === "Enter") unlock();
+    });
+  </script>
 </body>
 </html>
